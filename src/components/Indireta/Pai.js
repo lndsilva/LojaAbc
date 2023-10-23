@@ -6,14 +6,17 @@ import Estilos from '../estilos'
 
 export default props => {
 
+    const [texto, setTexto] = useState('')
     const [num, setNum] = useState(0)
     
-    function exibirValor(numero){
+    function exibirValor(numero, texto){
         setNum(numero)        
+        setTexto(texto)        
     }
     return (
         <>
-            <Text style={Estilos.txtGrande}>{num}</Text>
+            <Text style={Estilos.txtGrande}>
+                {texto}{num}</Text>
             <Filho 
                 min={1}
                 max={60}
