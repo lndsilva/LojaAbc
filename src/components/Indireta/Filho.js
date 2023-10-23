@@ -12,7 +12,8 @@ export default props => {
             title='Executar'
             onPress={
                 function(){
-                    gerarNumero(props.min, props.max)
+                    const n = gerarNumero(props.min, props.max)
+                    props.funcao(n)
                 }
             }
         
