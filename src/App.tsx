@@ -1,7 +1,10 @@
 import React from 'react';
 import {StyleSheet, SafeAreaView} from 'react-native';
 
-import ParImpar from './components/ParImpar';
+
+import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
+//import ListaProdutos from './components/produtos/ListaProdutos';
+//import ParImpar from './components/ParImpar';
 //import Diferenciar from './components/Diferenciar';
 //import ContadorV2 from './components/contador/ContadorV2';
 //import Pai from './components/Indireta/Pai';
@@ -16,8 +19,10 @@ import ParImpar from './components/ParImpar';
 
 export default () => (
   <SafeAreaView style={style.App}>
-    <ParImpar num={3}/>
+    <ListaProdutosV2/>
     {/*<Botao />
+    <ListaProdutos/>
+    <ParImpar num={3}/>
     <Diferenciar />
     <ContadorV2 />
     <Pai />
